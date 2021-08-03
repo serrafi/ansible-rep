@@ -9,7 +9,6 @@
   tasks:
   - copy: src=/home/ubuntu/ansible/master.gitconfig dest=~/.gitconfig
   
-- name: This command will change the working directory
-  ansible.builtin.shell:
-    cmd: ls -l | grep log
-    chdir: /home/ubuntu/ansible/
+- name: Return motd to registered var
+  ansible.builtin.command: cat /home/ubuntu/ansible/test.txt
+  register: mymotd
