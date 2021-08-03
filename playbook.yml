@@ -11,5 +11,5 @@
   
 - name: This command will change the working directory to somedir/
   ansible.builtin.shell:
-  cmd: ls -l | grep log
-  chdir: /home/ubuntu/ansible/
+    cmd: ls -l | grep log
+    chdir: /home/ubuntu/ansible/
