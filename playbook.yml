@@ -12,4 +12,7 @@
 - name: Return motd to registered var
   hosts: slave1
   become: yes
-  command: cat /home/ubuntu/ansible/test.txt.
+  tasks:
+  - command: cat /home/ubuntu/ansible/test.txt
+     
+  
