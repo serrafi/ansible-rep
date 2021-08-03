@@ -9,7 +9,7 @@
   tasks:
   - copy: src=/home/ubuntu/ansible/master.gitconfig dest=~/.gitconfig
   
-- name: This command will change the working directory to somedir/
+- name: This command will change the working directory
   ansible.builtin.shell:
     cmd: ls -l | grep log
     chdir: /home/ubuntu/ansible/
