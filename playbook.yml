@@ -11,4 +11,3 @@
   
 - name: Return motd to registered var
   ansible.builtin.command: cat /home/ubuntu/ansible/test.txt
-  register: mymotd
