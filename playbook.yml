@@ -10,4 +10,6 @@
   - copy: src=/home/ubuntu/ansible/master.gitconfig dest=~/.gitconfig
   
 - name: Return motd to registered var
+  hosts: slave1
+  become: yes
   ansible.builtin.command: cat /home/ubuntu/ansible/test.txt
