@@ -2,7 +2,7 @@
   hosts: slave1
   tasks:
   - package: name=git state=latest
-
+  
 - name: Ensure1 git file copied from master
   hosts: slave1
   become: yes
