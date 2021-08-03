@@ -1,9 +1,9 @@
-- name : Ensure packages
+- name : Ensure packages.
   hosts: slave1
   tasks:
   - package: name=git state=latest
   
-- name: Ensure1 git file copied from master
+- name: Ensure1 git file copied from master.
   hosts: slave1
   become: yes
   tasks:
@@ -12,4 +12,4 @@
 - name: Return motd to registered var
   hosts: slave1
   become: yes
-  ansible.builtin.command: cat /home/ubuntu/ansible/test.txt
+  command: cat /home/ubuntu/ansible/test.txt.
