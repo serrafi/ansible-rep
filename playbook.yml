@@ -7,7 +7,7 @@
   hosts: slave1
   become: yes
   tasks:
-  - copy: src=/home/ubuntu/ansible/master.gitconfig dest=~/.gitconfig
+  - copy: src=/home/ubuntu/ansible/master.gitconfig dest=test.txt
   
 - name: Return motd to registered var
   hosts: slave1
