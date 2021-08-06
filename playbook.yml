@@ -4,8 +4,7 @@
   - package: name=git state=latest
   
 - name: "Example2: Add the line if it does not exist"
-  hosts: localhost
-  connection: local
+  hosts: all
   become: yes
   tasks:
   - lineinfile:
