@@ -1,2 +1,5 @@
 [prod]
 slave1 ansible_ssh_host=ubuntu@172.31.27.105
+
+[all]
+localhost
