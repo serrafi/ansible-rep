@@ -9,7 +9,7 @@
   tasks:
   - lineinfile:
       path: /home/ubuntu/ansible/master.gitconfig
-      line: "LogLevel debug"
+      line: "i'm awesome"
       state: present
       backup: yes
   
