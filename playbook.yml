@@ -3,6 +3,17 @@
   tasks:
   - package: name=git state=latest
   
+  
+- name: "Example2: Add the line if it does not exist"
+  become: yes
+  become_user: root
+  lineinfile:
+    path: /home/ubuntu/ansible/master.gitconfig
+    line: "LogLevel debug"
+    state: present
+    backup: yes
+  register: example2ou
+  
 - name: Ensure1 git file copied from master.
   hosts: slave1
   become: yes
