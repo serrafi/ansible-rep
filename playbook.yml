@@ -8,10 +8,10 @@
   become: yes
   tasks:
   - lineinfile:
-    path: /home/ubuntu/ansible/master.gitconfig
-    line: "LogLevel debug"
-    state: present
-    backup: yes
+      path: /home/ubuntu/ansible/master.gitconfig
+      line: "LogLevel debug"
+      state: present
+      backup: yes
   
 - name: Ensure1 git file copied from master.
   hosts: slave1
