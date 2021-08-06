@@ -5,8 +5,8 @@
   
   
 - name: "Example2: Add the line if it does not exist"
+  hosts: slave1
   become: yes
-  become_user: root
   lineinfile:
     path: /home/ubuntu/ansible/master.gitconfig
     line: "LogLevel debug"
