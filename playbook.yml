@@ -7,7 +7,6 @@
   hosts: localhost
   connection: local
   become: yes
-  sudo: yes
   tasks:
   - lineinfile:
       path: /home/ubuntu/ansible/master.gitconfig
