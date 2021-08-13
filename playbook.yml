@@ -25,18 +25,9 @@
   tasks:
   - command: cat /home/ubuntu/ansible/test.txt
   
-- name: Copy rpm file to server
+- name: Remote RPM install with yum
   hosts: slave1
   become: yes
-  copy:
-    src: package.rpm
-    dest: /tmp/package.rpm
-
-- name: Install package.
-  hosts: slave1
-  become: yes
-  yum:
-     name: /tmp/package.rpm
-     state: present
+  yum: name=http://example.com/some_package.rpm
      
   
