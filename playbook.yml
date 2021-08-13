@@ -28,6 +28,7 @@
 - name: Remote RPM install with yum
   hosts: slave1
   become: yes
-  yum: name=http://example.com/some_package.rpm
+  tasks:
+  - package: name=rpm state=latest
      
   
