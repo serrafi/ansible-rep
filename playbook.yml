@@ -9,7 +9,7 @@
   tasks:
   - lineinfile:
       path: /home/ubuntu/ansible/master.gitconfig
-      line: "i'm awesome poip"
+      line: "i'm awesome poip ddd"
       state: present
       backup: yes
   
